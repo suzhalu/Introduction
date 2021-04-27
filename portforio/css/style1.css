@@ -1,0 +1,781 @@
+@charset "UTF-8";
+
+/*----------------------
+全体設定
+----------------------*/
+html { font-size: 62.5%; }
+body {
+  font-family: "游ゴシック", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", verdana, "メイリオ", "Meiryo", "Osaka", sans-serif;
+  /* letter-spacing: .1em; */
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+#wrapper{
+  width: 100%;
+}
+
+
+/*-------------------------
+        ヘッダー
+-------------------------*/
+header .mv{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+header img{
+  max-width: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+}
+header h1{
+  font-size: 30px;
+  position: absolute;
+  color: black;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+header .header_title{
+  letter-spacing: 15px;
+  font-size: 20px;
+  position: absolute;
+  color: black;
+  top: 14%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+/* 縦書き */
+header .left_text{
+  color: black;
+  position: absolute;
+  top: 14%;
+  left: 2%;
+  writing-mode:vertical-lr;
+}
+header .right_title{
+  color: black;
+  position: absolute;
+  top: 75%;
+  left: 95%;
+  writing-mode:vertical-rl;
+}
+
+/* 携帯用 */
+@media screen and (max-width: 767px){
+  header h1{
+  text-align: start;
+  margin-left: 5%;
+  top: 0;
+  margin-top: 12%;
+  font-weight: 600;
+  font-size: 100%;
+  letter-spacing: normal;
+  }
+  header .header_title{
+  text-align: start;
+  margin-left: 5%;
+  top: 0;
+  margin-top: 7%;
+  letter-spacing: normal;
+  font-size: 75%;
+  }
+  header .left_text{
+    margin-top: 11%;
+    opacity: 0.5;
+  }
+  header .right_title{
+    left: 0;
+    margin-left: 93%;
+  }
+}
+
+
+
+/*------------------------------
+            メイン
+------------------------------*/
+main .second_title{
+  position: sticky;
+  top: 0;
+  margin-left: 20px;
+  z-index: 2;
+}
+main .second_title h2{
+  color: rgb(114, 122, 119);
+  font-size: 4rem;
+}
+main .second_title .second_title_text{
+  color: rgb(114, 122, 119);
+  font-size: 20px;
+  margin-top: 1.5%;
+  letter-spacing: 7px;
+}
+
+/* 携帯用 */
+@media screen and (max-width: 767px){
+  main .second_title h2{
+    font-size: 100%;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  main .second_title .second_title_text{
+    font-size: 75%;
+    margin-left: 5%;
+  }
+  main .main_first{
+    display: block;
+  }
+  main .main_leftbigtext{
+    display: table-cell;
+  }
+  main .main_leftminitext {
+    display: table-footer-group;
+  }
+}
+
+
+
+/*------------------------------
+         main first 
+ -----------------------------*/
+main .main_first{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10%;
+}
+main .main_first img{
+  width: 37%;
+  margin-left: 1%;
+}
+main .main_lefttext{
+  margin-left:7%;
+}
+main .main_leftbigtext{
+  font-size: 8rem;
+  writing-mode:vertical-lr;
+}
+main .main_leftminitext{
+  writing-mode:vertical-lr;
+  margin-left:25px;
+  margin-top: 15px;
+  opacity:0.5;
+  color: grey;
+}
+main .main_righttext{
+  display: flex;
+  flex-flow: column;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: 5%;
+}
+main .main_righttext .mini_hanndo{
+  width: 44%;
+  align-self: flex-end;
+}
+main .main_righttext h3{
+  font-size: x-large;
+  margin-left: 9%;
+  letter-spacing: 2px;
+  margin-bottom: 2%;
+}
+main .main_righttext .first_right_text{
+  line-height: 3rem;
+  text-align: justify;
+  align-self: flex-end;
+  font-size: 75%;
+}
+
+/* 携帯用 */
+@media screen and (max-width: 767px){
+  main .main_first{
+    flex-wrap: wrap;
+    display: block;
+  }
+  main .main_lefttext{
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-bottom: 20%;
+    }
+  main .main_first img{
+    margin-left: 5%;
+    width: 90%;
+  }
+  main .main_righttext {
+    width: 85%;
+  }
+  main .main_righttext .first_right_text {
+  width: 100%;
+  margin-top: 10%;
+  font-size: 75%;
+  line-height: 3rem;
+  letter-spacing: normal;
+  margin-right: 4%;
+  }
+  main .main_righttext h3 {
+    margin-left: -10%;
+    font-weight: 500;
+  }
+}
+
+
+
+/*------------------------
+      main second 
+ -----------------------*/
+
+main .main_second{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25rem;
+}
+
+main .second_left_box{
+  align-self: center;
+  margin-right: 7.5%;
+  margin-left: 6%;
+}
+main .second_left_box h3{
+  font-size: x-large;
+  margin-bottom: 2%;
+  line-height: normal;
+}
+main .second_left_box .second_left_text{
+  line-height: 3rem;
+  text-align: justify;
+  width: 100%;
+  font-size: 75%;
+}
+main .second_right_box{
+  position: relative;
+}
+main .second_right_box .base{
+  width: 100%;
+}
+main .second_right_box .ue{
+  position: absolute;
+  top: 95%;
+  left: 35%;
+  width: 35%;
+}
+main .second_right_box .right_box_text{
+  position: absolute;
+  left: 0%;
+  width: 79%;
+  font-size: 75%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/* 携帯用 */
+@media screen and (max-width: 767px){
+  main .main_second{
+    display: block;
+    width: 100%;
+    box-sizing: border-box; 
+  }
+  main .second_title{
+    background: rgb(226, 226, 226);
+    z-index: 2;
+    margin-left: 0;
+  }
+
+  main .second_right_box{
+    margin-left: 5%;
+  }
+  main .second_right_box .base{
+    width: 95%;
+  }
+  main .second_left_box h3{
+  font-weight: 500;
+  }
+  main .second_left_box .second_left_text{
+    width: 100%;
+    margin-top: 10%;
+    font-size: 75%;
+    line-height: 3rem;
+    letter-spacing: normal;
+    margin-bottom: 7%;
+  }
+  main .second_right_box .ue{
+    margin-left: 28%;
+  }
+  main .second_right_box .right_box_text{
+    margin-left: 16%;
+    font-size: 54%;
+  }
+}
+
+
+
+/* ------------------------
+         main sard
+------------------------ */
+
+main .main_sard{
+  display: flex;
+  margin-top: 20%;
+}
+main .sard_left_box{
+  width: 41%;
+  margin-left: 5%;
+}
+main .sard_left_box img{
+  width: 100%;
+  margin-left: -8rem;
+  margin-top: 3%;
+}
+main .sard_left_box .left_box_money{
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+  margin-left: 9%;
+  font-size: 80%;
+}
+main .sard_left_box h2{
+  font-size: xx-large;
+  margin-bottom: 4rem;
+}
+main .sard_right_box{
+  margin: auto;
+}
+main .main_sard dl{
+  width: 46%;
+  align-self: flex-end;
+}
+main .main_sard dt{
+  margin-bottom: 0%;
+  font-size: x-large;
+}
+main .main_sard dd{
+  line-height: 3rem;
+  width: 100%;
+  font-size: 75%;
+}
+
+main .haikei{
+  width: 85%;
+  margin-top: 35%;
+  margin-bottom: 20%;
+  margin-left: 10%;
+}
+
+/* 携帯用 */
+@media screen and (max-width: 767px){
+  main .main_sard{
+    margin-top: 70%;
+    display: block;
+  }
+  main .main_sard{
+    margin-top: 70%;
+  }
+  main .sard_left_box {
+    text-align: center;
+    width: 95%;
+  }
+  main .sard_left_box h2{
+    font-weight: 500;
+    font-size: x-large;
+    margin-bottom: 19%;
+    width: 77%;
+    margin-left: 10%;
+  }
+  main .sard_left_box .left_box_money{
+    font-size: 75%;
+    margin-right: 16%;
+  }
+  main .sard_left_box img{
+    margin-right: -14%;
+  }
+
+  main .main_sard dl{
+    margin-top: 1%;
+    width: 100%;
+  }
+  main .main_sard dd{
+    width: 75%;
+    margin-top: 10%;
+    font-size: 75%;
+    line-height: 3rem;
+    letter-spacing: normal;
+    margin-bottom: 7%;
+    margin-left: 12%;
+  }
+  main .main_sard dt{
+    font-size: 100%;
+    font-weight: 500;
+    margin-left: 12%;
+  }
+  main .haikei{
+    margin: 0;
+    width: 100%;
+    margin-top: 65%;
+    margin-bottom: 65%;
+  }
+}
+
+
+
+/* ----------------------------
+            fours
+----------------------------- */
+main .fours_titlle{
+  margin-left: 5%;
+  line-height: normal;
+  margin-top: 11rem;
+}
+main .fours_titlle h2{
+  font-size: 5rem;
+}
+main .fours_titlle .title_japanese{
+  font-size: 100%;
+    opacity: 0.5;
+}
+.fours_titlle .title_description{
+  font-size: 85%;
+  margin-bottom: 4rem;
+  opacity: 0.5;
+}
+
+.main_fours .fours_4types{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6%;
+  justify-content: center;
+}
+.fours_4types .kousui_title{
+  margin-left: 12%;
+}
+.fours_4types img{
+  width: 100%;
+  margin-left: -5%;
+}
+.fours_4types dd{
+  font-size: 75%;
+  line-height: 3rem;
+}
+.fours_4types .types_first,.types_second,.types_sard{
+  width: 30%;
+  transition: 0.3s;
+}
+.fours_4types .types_first:hover{
+  transform: scale(1.1);
+}
+.types_first dl{
+  width: 75%;
+  margin-left: 12%;
+  margin-top: -2%;
+}
+.types_first dt{
+  margin-bottom: 3%;
+}
+.fours_4types .types_second:hover{
+  transform: scale(1.1);
+}
+.types_second dl{
+  width: 75%;
+  margin-left: 13%;
+  margin-top: -2%;
+}
+.types_second dt{
+  margin-bottom: 2%;
+}
+.fours_4types .types_sard:hover{
+  transform: scale(1.1);
+}
+.fours_4types .types_sard .kousui_title{
+  margin-left: 0%;
+}
+.fours_4types .types_sard img{
+  margin-top: -2%;
+  width: 95%;
+}
+.types_sard .kousui_title{
+  position: absolute;
+}
+.types_sard dl{
+  width: 75%;
+  margin-top: -10%;
+  margin-left: 12%;
+}
+.types_sard dt{
+  margin-bottom: 2%;
+}
+
+/* 携帯用 */
+@media screen and (max-width: 767px){
+  main .fours_titlle h2{
+    font-size: xx-large;
+    font-weight: 500;
+  }
+  .main_fours .fours_4types{
+    display: block;
+  }
+  .fours_4types .types_first, .types_second, .types_sard{
+    width: 100%;
+    margin-top: 40%;
+  }
+  .fours_4types .kousui_title{
+    margin-bottom: 5%;
+  }
+  .fours_4types .types_sard .kousui_title{
+    margin-left: 6%;
+  }
+  .fours_4types .types_sard img{
+    margin-top: 4%;
+  }
+}
+
+
+
+/* -----------------------------------
+              Fifth
+----------------------------------- */
+.main_Fifth .fifth_title_box{
+  margin-top: 30%;
+  text-align: center;
+}
+.main_Fifth .fifth_title{
+  font-size:5rem;
+  margin-bottom: 1rem;
+}
+.main_Fifth .fifth_subtitle{
+  font-size: 100%;
+  margin-bottom: 5rem;
+  opacity: 0.5;
+}
+.fifth_title_box .fifth_title_text{
+  line-height: 3rem;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.main_Fifth .syouhin_box{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+.syouhin_box .hiden{
+  width: 94%;
+  overflow: hidden;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+.main_Fifth .syouhin_box .pink_box,.ao_box{
+  width: 30%;
+  background: rgb(196, 196, 196);
+  padding-bottom: 1%;
+}
+.syouhin_box .pink_img,.ao_img{
+  width: 100%;
+  transition: 0.3s;
+}
+.syouhin_box .pink_img:hover,.ao_img:hover{
+  transform: scale(1.3);
+}
+.syouhin_box dl{
+  width: 94%;
+  margin-top: 10%;
+  margin-left: 3%;
+}
+.syouhin_box dt{
+  font-size: 100%;
+}
+.syouhin_box dd{
+  margin-top: 7%;
+  line-height: 3rem;
+  font-size: 75%;
+}
+
+/* 携帯用 */
+@media screen and (max-width: 767px){
+  .main_Fifth{
+    margin-top: 100%;
+  }
+  .main_Fifth .fifth_title{
+    font-size: xx-large;
+    font-weight: 500;
+  }
+  .fifth_title_box .fifth_title_text{
+    font-size: 75%;
+    letter-spacing: normal;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .main_Fifth .syouhin_box{
+    display: block;
+  }
+  .main_Fifth .syouhin_box .pink_box, .ao_box{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20%;
+  }
+  .syouhin_box .pink_img, .ao_img{
+    margin-top: 3%;
+  }
+}
+
+
+
+
+.map{
+  text-align: center;
+  margin-top: 30%;
+}
+.main_map{
+  display: flex;
+  justify-content: flex-start;
+  width: 79%;
+  margin-left: 10.5%;
+  margin-top: 7%;
+}
+.main_map .map_left_box{
+  flex-basis: 65%;
+}
+.map_left_box .map_title{
+  font-size: 5rem;
+}
+
+.map_right_box{
+  margin-left: -30%;
+}
+.map_right_box .right_text{
+  line-height: 3rem;
+  width: 100%;
+  margin-bottom: 5%;
+  font-size: 75%;
+}
+.map_right_box .right_second_boxs{
+  display: flex;
+  justify-content: center;
+}
+.right_second_boxs .second_boxs_first,.second_boxs_second{
+  padding-left: 1%;
+  border-left: solid 0.5px;
+  opacity: 0.5;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px){
+  .map{
+    margin-top: 100%;
+  }
+  .main_map{
+    display: block;
+    width: 90%;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 50%;
+  }
+  .main_map .map_left_box{
+    margin-bottom: 5%;
+  }
+  .map_right_box{
+    margin: 0;
+  }
+  .map_right_box .right_text{
+    font-size: 75%;
+    letter-spacing: normal;
+    margin-bottom: 15%;
+  }
+}
+
+
+/* ---------------------
+       footer
+--------------------- */
+footer{
+  width: 100%;
+  margin-top: 20%;
+}
+footer .footer_box{
+  text-align: center;
+  margin-bottom: 10%;
+}
+.footer_box .footer_subtitle{
+  font-size: large;
+  margin-bottom: 1%;
+}
+.footer_box .footer_title{
+  font-weight: 500;
+  margin-bottom: 10%;
+  font-size: xx-large;
+}
+.footer_box ul{
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
+}
+.footer_box .toiawase{
+  width: 12%;
+  margin-left: 0;
+  margin-right: 0;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.toiawase .toiawase_text{
+  width: 100%;
+  height: 100%;
+  border: solid;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.copyright{
+  text-align: center;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 767px){
+  footer{
+    margin-top: 112%;
+  }
+  footer .footer_box{
+    margin-bottom: 40%;
+  }
+  .footer_box .footer_subtitle{
+    font-size: 100%;
+  }
+  .footer_box .footer_title{
+    margin-bottom: 35%;
+    margin-top: 5%;
+    font-weight: 600;
+    font-size: 100%;
+    letter-spacing: normal;
+  }
+  .footer_box .toiawase{
+    width: 44%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .toiawase .toiawase_text{
+    font-size: 100%;
+  }
+
+}
+
+
+
+/* slider */
+.slick-dotted.slick-slider{
+  margin-bottom: 30px;
+  width: 49%;
+  margin-top: 16%;
+}
+@media screen and (max-width: 767px){
+  .slick-dotted.slick-slider{
+    width: 100%;
+  }
+}
+
